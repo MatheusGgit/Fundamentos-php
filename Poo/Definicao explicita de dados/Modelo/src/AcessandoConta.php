@@ -10,8 +10,10 @@ use Modelo\src\Funcionario;
 use Modelo\src\Pessoa;
 require_once '../classe_auto_load.php';
 
+//todo: Não está achando a classe por algum motivo
 $primeiraConta = new Conta('123.123.123-12', 'Matheus');
-$primeiraConta->depositar(200);
-$primeiraConta->sacar(15.00);
+//$primeiraConta->depositar(200);
+//$primeiraConta->sacar(15.00);
 $primeiroFuncinario = new Funcionario('Matheus', '123.123.123-12', 'CEO');
 echo $primeiroFuncinario->getNome();
+$primeiraConta->sacar(200.00);

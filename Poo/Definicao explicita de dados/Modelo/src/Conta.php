@@ -17,7 +17,8 @@ class Conta
     {
         if ($valorASacar > $this->saldo)
         {
-            echo 'Valor indisponível'.PHP_EOL;
+            //echo 'Valor indisponível'.PHP_EOL;
+            throw new SaldoInsuficienteExeption($valorASacar, $this->saldo);
         }
         else
         {
